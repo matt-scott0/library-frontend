@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="overlay">
+        <div class="add-form">
+            <div class="card add-book-card">
+                <form action="" method="post" name="add-book-form">
+                    <label for="book-name">Book Name</label>
+                    <input type="text" id="book-name" name="book-name" required="required">
+                    <label for="author-name">Author Name</label>
+                    <input type="text" id="author-name" name="author-name" required="required">
+                    <label for="num-pages">Number of Pages</label>
+                    <input type="number" id="num-pages" name="num-pages" required="required">
+                    <p>Have you read?</p>
+                    <input type="radio" name="yes_no" id="have-read-true">Yes</input>
+                    <input type="radio" name="yes_no" id="have-read-false">No</input>
+                    <button type="button" id="addbtn" class="button submit-add-book">Add Book</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="inner">
+                <h2>library.</h2>
+                <button class="button login-btn">log in</button>
+            </div>
+            
+        </div>
+        <div class="library">
+            
+        </div>
+        <div class="btn-container">
+            <button class="button add-book-btn">+Add Book</button>
+        </div>
+    </div>
+</body>
+</html>

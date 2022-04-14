@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: #EEEBEF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
+}
+
+.header {
+    background-color: #FFFAFA;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    width: 50%;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    height: 50px;
+    width: 90px;
+    border-radius: 15px;
+}
+
+.login-btn:hover {
+    background-color: #FFFAFA;
+    border: 3px solid #EEEBEF;
+    transition: background-color 0.2s linear;
+}
+
+.login-btn:not(:hover) {
+    background-color: #EEEBEF;
+    border: 3px solid #EEEBEF;
+    transition: background-color 0.2s linear;
+}
+
+.library {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-book-btn {
+    height: 75px;
+    width: 200px;
+    background-color: #EEEBEF;
+    border-radius: 15px;
+    font-size: 24px; 
+}
+
+.add-book-btn:hover {
+    background-color: rgb(59, 59, 59);
+    color: #FFFAFA;
+    transition: background-color 0.2s linear;
+}
+
+.add-book-btn:not(:hover) {
+    background-color: #EEEBEF;
+    color: black;
+    transition: background-color 0.2s linear;
+}
+
+.card {
+    height: 300px;
+    width: 400px;
+    background-color: #FFFAFA;
+    box-shadow: 
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.read-btn {
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 2px solid rgb(59, 59, 59);
+}
+
+.read-btn-false:hover {
+    background-color: rgb(241, 52, 52, 0.5);
+    transition: background-color 0.2s linear;
+}
+
+.read-btn-true:hover {
+    background-color: rgb(136, 239, 42, 0.5);
+    transition: background-color 0.2s linear;
+}
+
+.read-btn-true {
+    background-color: rgb(136, 239, 42);
+}
+
+.read-btn-false {
+    background-color: rgb(241, 52, 52);
+}
+
+.delete-book-btn {
+    height: 50px;
+    width: 140px;
+    background-color: #EEEBEF;
+    color: rgb(59, 59, 59);
+    border-radius: 15px;
+    font-size: 16px;
+    border: solid 2px #EEEBEF;
+}
+
+.delete-book-btn:hover {
+    background-color:rgb(59, 59, 59);
+    color: #FFFAFA;
+    transition: background-color 0.2s linear;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.add-book-card {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-book-card>form {
+    display: flex;
+    height: 300px;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    height: 25px;
+    width: 200px;
+}
+
+.submit-add-book {
+    height: 40px;
+    width: 120px;
+    border-radius: 15px;
+}
